@@ -13489,11 +13489,11 @@ Saving to: ‘../data/aclImdb_v1.tar.gz’
 <p><strong>Answer:</strong>
 This funtion / methos apply the following steps to the input.</p>
 <ul>
-<li>Remove HTML tags</li>
-<li>Convert everything to lower case</li>
-<li>Split string into words</li>
-<li>Remove stop words</li>
-<li>Stem the words</li>
+<li><strong>Remove HTML tags:</strong> Remove non interpretable character</li>
+<li><strong>Convert everything to lower case:</strong> This is completed in order to eliminate problems due to case sensitive training</li>
+<li><strong>Split string into words:</strong> Separate each word, easy for pre-process</li>
+<li><strong>Remove stop words:</strong> remove any stop word from the text string to simplify the vocabulary</li>
+<li><strong>Stem the words:</strong> Stem the words to simplify the vocabulary</li>
 </ul>
 
 </div>
@@ -13722,6 +13722,7 @@ This funtion / methos apply the following steps to the input.</p>
 <li><strong>like:</strong> 22,799</li>
 <li><strong>time:</strong> 16,191</li>
 </ul>
+<p>Yes It makes total sense that this are commond words, as for example most of them are related to movies in some way. move, film, time....</p>
 
 </div>
 </div>
@@ -14853,9 +14854,9 @@ Billable seconds: 1547
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>The models have different architectures.
-The first one is from the decision tree family, and to predict sentiment relies only on the combination of words but not context. The second one created in PyTorch is a neuronal network utilizing LSTM this allows this model to have memory capabilities learning the meaning of the sentences in comparison to the previous model is for this reason that the PyTorch model with LSTM is superior for this task and in particular for NLP problems
-I believe that the PyTorch model is superior</p>
+<p>Both of the models have different architectures.
+The first one is from the decision tree family or extreme decision tree, to perform sentiment analysis, this model relies only on the combination of words but not the context, for example, one hot encoding. The second one created in PyTorch is a neuronal network utilizing LSTM (Long Short Term Memory Cells) this cell allows the model to have some kind of memory capabilities learning the meaning of the sentences over time in comparison to the previous model this model can infer meaning to certain point; is for this reason that the PyTorch model with LSTM is superior for this type of problems and in particular to any NLP (Natural Language Processing)</p>
+<p>I believe that the PyTorch model is superior, at the same time because it is a Deep Neuronal Network model with more data then can reach higher accuracies than typical ML algorithms</p>
 
 </div>
 </div>
